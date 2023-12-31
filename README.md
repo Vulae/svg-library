@@ -1,5 +1,5 @@
 
-# >> [SVG Library](vulae.github.io/svg-library) <<
+# >> [SVG Library](https://vulae.github.io/svg-library) <<
 
 A bunch of SVGs I've made that are all under the MIT license.
 
