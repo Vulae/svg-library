@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+
+    <!-- Clock numbers -->
+    <style>
+
+        text {
+            fill: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            text-anchor: middle;
+            alignment-baseline: middle;
+        }
+
+    </style>
+    <text x="45.5" y="9.61731409782016"   font-size="8">1</text>
+    <text x="55.38268590217984" y="19.5"  font-size="8">2</text>
+    <text x="59" y="33"                   font-size="8">3</text>
+    <text x="55.382685902179844" y="46.5" font-size="8">4</text>
+    <text x="45.5" y="56.382685902179844" font-size="8">5</text>
+    <text x="32" y="60"                   font-size="8">6</text>
+    <text x="18.5" y="56.382685902179844" font-size="8">7</text>
+    <text x="8.617314097820156" y="46.5"  font-size="8">8</text>
+    <text x="5" y="33"                    font-size="8">9</text>
+    <text x="8.61731409782016" y="19.5"   font-size="7.5">10</text>
+    <text x="18.5" y="9.617314097820163"  font-size="7.5">11</text>
+    <text x="32" y="6"                    font-size="7.5">12</text>
+
+    <g transform="translate(32 32)">
+        <!-- Clock second hand -->
+        <line x1="0" x2="0" y1="-20" y2="0" stroke="white" stroke-width="0.5" stroke-linecap="round">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                values="0; 6; 12; 18; 24; 30; 36; 42; 48; 54; 60; 66; 72; 78; 84; 90; 96; 102; 108; 114; 120; 126; 132; 138; 144; 150; 156; 162; 168; 174; 180; 186; 192; 198; 204; 210; 216; 222; 228; 234; 240; 246; 252; 258; 264; 270; 276; 282; 288; 294; 300; 306; 312; 318; 324; 330; 336; 342; 348; 354"
+                calcMode="discrete"
+                dur="60s"
+                repeatCount="indefinite"
+            />
+        </line>
+        <!-- Clock second dots-->
+        <circle r="21" fill="transparent" stroke="white" stroke-width="0.3" stroke-dasharray="0.5 1.7" stroke-dashoffset="0.3" />
+        <!-- Clock minute hand -->
+        <line x1="0" x2="0" y1="-20" y2="0" stroke="white" stroke-width="0.8" stroke-linecap="round">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                values="0; 360"
+                dur="3600s"
+                repeatCount="indefinite"
+            />
+        </line>
+        <!-- Clock hour hand -->
+        <line x1="0" x2="0" y1="-15" y2="0" stroke="white" stroke-width="1.2" stroke-linecap="round">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                values="0; 360"
+                dur="43200s"
+                repeatCount="indefinite"
+            />
+        </line>
+        <!-- Clock hour dots -->
+        <!-- TODO -->
+        <!-- <circle r="21" fill="transparent" stroke="white" stroke-width="1" stroke-dasharray="4.5" /> -->
+    </g>
+
+</svg>

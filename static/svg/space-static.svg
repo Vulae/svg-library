@@ -1,0 +1,46 @@
+<!-- Huge help: https://codepen.io/finnhvman/pen/abWrPBZ -->
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+
+    <defs>
+
+        <filter id="stars" color-interpolation-filters="sRGB">
+            <!-- Noise stars -->
+            <feTurbulence baseFrequency="0.2" />
+            <feColorMatrix values="0 0 0 9 -5
+                                    0 0 0 9 -5
+                                    0 0 0 9 -5
+                                    0 0 0 0 1" />
+            <!-- Overlay stars -->
+            <feBlend in="SourceGraphic" mode="screen" />
+        </filter>
+
+        <filter id="nebula1" color-interpolation-filters="sRGB">
+            <!-- Noise -->
+            <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="3" />
+            <!-- Noise to nebula color -->
+            <feColorMatrix values="0.3 0 0 0 0
+                                    0 0 0 0 0
+                                    0 0 0.5 0 0
+                                    0.5 -0.5 0.5 1 0"/>
+        </filter>
+
+        <filter id="nebula2" color-interpolation-filters="sRGB">
+            <!-- Noise -->
+            <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="3" />
+            <!-- Noise to nebula color -->
+            <feColorMatrix values="0 0 0 0 0
+                                    0 0 0 0 0
+                                    0 0 0.7 0 0
+                                    0.5 -0.5 0.5 0 0" />
+        </filter>
+
+    </defs>
+
+    <rect width="100%" height="100%" fill="black" />
+    
+    <g width="100%" height="100%" filter="url(#stars)">
+        <rect width="100%" height="100%" filter="url(#nebula1)" />
+        <rect width="100%" height="100%" filter="url(#nebula2)" />
+    </g>
+
+</svg>
