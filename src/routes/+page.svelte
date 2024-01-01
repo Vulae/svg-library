@@ -1,3 +1,8 @@
+<script lang="ts">
+    import ScriptGate from "$components/ScriptGate.svelte";
+    import SVG_Clock from "$components/svg/clock.svelte";
+
+</script>
 
 <style lang="scss">
 
@@ -31,7 +36,12 @@
     </div>
 
     <div class="h-96 max-w-[48rem]">
-        <img class="w-full h-full" src="/svg-library/svg/clock.svg" title="Clock" alt="Clock">
+        <ScriptGate type="js-enabled">
+            <SVG_Clock class="w-full h-full"/>
+        </ScriptGate>
+        <ScriptGate type="js-disabled">
+            <img class="w-full h-full" src="/svg-library/svg/clock.svg" title="Clock" alt="Clock">
+        </ScriptGate>
     </div>
 
 </div>
