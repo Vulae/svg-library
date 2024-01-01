@@ -3,4 +3,8 @@
 
 </script>
 
+<svelte:head>
+    <title>SVG Library</title>
+</svelte:head>
+
 <slot />
