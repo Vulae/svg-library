@@ -8,8 +8,9 @@ export class SVGMaker {
     constructor(width: string | number, height: string | number) {
         this.svg = document.createElement('svg');
         this.svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-        this.svg.setAttribute('width', `${width}`);
-        this.svg.setAttribute('height', `${height}`);
+        this.svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+        // this.svg.setAttribute('width', `${width}`);
+        // this.svg.setAttribute('height', `${height}`);
     }
 
     public addText(options: {
