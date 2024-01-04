@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9">
+
+    <defs>
+        <filter id="color" color-interpolation-filters="sRGB">
+            <feFlood
+                x="0" y="0" width="16" height="9" result="bounce-tb"
+            >
+                <animate
+                    attributeName="flood-color"
+                    values="Cornsilk;SteelBlue;BurlyWood;Black;Wheat;DimGray;Teal;Turquoise;Khaki;DodgerBlue;RebeccaPurple;MediumPurple;DeepSkyBlue;Moccasin;GoldenRod;LightGoldenRodYellow;MintCream;BlanchedAlmond;DarkGoldenRod;SeaGreen;DarkSlateGrey;Lavender;LightSalmon;DeepPink;LightGrey;ForestGreen;SandyBrown;PapayaWhip;DarkKhaki;NavajoWhite;MediumTurquoise;GreenYellow;Linen;DimGrey;OliveDrab;LightBlue;Grey;LavenderBlush;Pink;GhostWhite;Purple;HoneyDew;DarkTurquoise;Thistle;Blue;PaleVioletRed;DarkOrange;MediumVioletRed;Ivory;DarkCyan;SlateGrey;RosyBrown;PaleGreen;OrangeRed;Cyan;Peru;DarkSlateGray;SpringGreen;Plum;AntiqueWhite;MistyRose;Silver;YellowGreen;LightSlateGray;Violet;Tomato;Magenta;LemonChiffon;WhiteSmoke;Bisque;Crimson;DarkGreen;Indigo;Green;Yellow;LightSlateGrey;LightCoral;Snow;Olive;DarkRed;Salmon;Red;Orchid;SlateBlue;SlateGray;PowderBlue;FireBrick;PaleGoldenRod;Lime;LightSkyBlue;Orange;CadetBlue;LightYellow;DarkViolet;MediumBlue;Sienna;LightSeaGreen;Brown;DarkSalmon;DarkOrchid;SkyBlue;PeachPuff;BlueViolet;MidnightBlue;IndianRed;Coral;Tan;MediumSlateBlue;RoyalBlue;Chocolate;SeaShell;LightCyan;LightGreen;MediumSeaGreen;DarkGrey;SaddleBrown;DarkBlue;LightPink;Beige;CornflowerBlue;MediumOrchid;Navy;Aquamarine;Gold;OldLace;MediumAquaMarine;Azure;AliceBlue;HotPink;DarkGray;DarkSeaGreen;LightSteelBlue;FloralWhite;Aqua;Fuchsia;White;Gray;DarkOliveGreen;LimeGreen;Gainsboro;LawnGreen;DarkSlateBlue;Maroon;MediumSpringGreen;PaleTurquoise;DarkMagenta;Chartreuse;LightGray"
+                    dur="416.25s"
+                    repeatCount="indefinite"
+                    calcMode="discrete"
+                />
+            </feFlood>
+            <feColorMatrix
+                in="bounce-tb"
+                result="bounce-tb-darkened"
+                type="matrix"
+                values="0.5 0 0 0 0
+                        0 0.5 0 0 0
+                        0 0 0.5 0 0
+                        0 0 0 1 0"
+            />
+            <feFlood
+                x="0" y="0" width="16" height="9" result="bounce-lr"
+            >
+                <animate
+                    attributeName="flood-color"
+                    values="FloralWhite;Grey;Red;Tomato;DarkSlateGray;Salmon;LavenderBlush;MediumTurquoise;RebeccaPurple;Orchid;PapayaWhip;LightCoral;MediumSeaGreen;Green;BurlyWood;LightPink;MediumSpringGreen;DarkTurquoise;Thistle;Brown;FireBrick;Chartreuse;Beige;LightGray;LightSeaGreen;Wheat;Bisque;Orange;DarkKhaki;DimGray;LightCyan;Azure;LightYellow;SpringGreen;SandyBrown;Teal;MediumPurple;NavajoWhite;LightGrey;MintCream;Gold;LemonChiffon;Black;PaleVioletRed;MistyRose;IndianRed;SlateBlue;MediumAquaMarine;DarkGreen;Tan;Crimson;Purple;PaleTurquoise;Maroon;SaddleBrown;Plum;DimGrey;DarkGrey;DeepPink;DarkOrchid;Cyan;LightSkyBlue;PaleGreen;GhostWhite;HotPink;BlanchedAlmond;DarkRed;LimeGreen;DarkSlateGrey;DodgerBlue;Linen;SeaShell;Lavender;RosyBrown;LightSalmon;OrangeRed;AntiqueWhite;Pink;LawnGreen;PeachPuff;Cornsilk;Moccasin;MediumOrchid;Olive;WhiteSmoke;MidnightBlue;RoyalBlue;Aquamarine;Chocolate;DarkGray;LightGoldenRodYellow;DarkMagenta;Peru;DarkViolet;Indigo;White;SlateGrey;Yellow;MediumVioletRed;LightGreen;ForestGreen;MediumSlateBlue;Coral;Khaki;Ivory;Sienna;Magenta;DarkOrange;PaleGoldenRod;SteelBlue;DeepSkyBlue;Gray;DarkSeaGreen;LightSteelBlue;Lime;GoldenRod;GreenYellow;BlueViolet;Gainsboro;Aqua;DarkCyan;CadetBlue;DarkGoldenRod;Turquoise;AliceBlue;PowderBlue;Blue;Silver;OldLace;SkyBlue;MediumBlue;SlateGray;CornflowerBlue;Snow;YellowGreen;Violet;SeaGreen;Navy;OliveDrab;LightBlue;DarkSalmon;Fuchsia;LightSlateGray;DarkSlateBlue;DarkBlue;LightSlateGrey;DarkOliveGreen;HoneyDew"
+                    dur="740s"
+                    repeatCount="indefinite"
+                    calcMode="discrete"
+                />
+            </feFlood>
+            <feColorMatrix
+                in="bounce-lr"
+                result="bounce-lr-darkened"
+                type="matrix"
+                values="0.5 0 0 0 0
+                        0 0.5 0 0 0
+                        0 0 0.5 0 0
+                        0 0 0 1 0"
+            />
+            <feComposite
+                in="bounce-tb-darkened"
+                in2="bounce-lr-darkened"
+                operator="lighter"
+            />
+        </filter>
+    </defs>
+
+    <rect x="0" y="0" width="1" height="1" filter="url(#color)">
+        <animate
+            attributeName="x"
+            values="0;15;0"
+            dur="10s"
+            repeatCount="indefinite"
+        />
+        <animate
+            attributeName="y"
+            values="0;8;0"
+            dur="5.625s"
+            repeatCount="indefinite"
+        />
+    </rect>
+
+</svg>

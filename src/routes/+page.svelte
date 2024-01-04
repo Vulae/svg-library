@@ -12,7 +12,8 @@
 
 </style>
 
-<div class="w-full px-32 flex flex-col items-center gap-16">
+<div class="w-full px-32 flex flex-col items-center gap-16 pb-32">
+
     <div class="w-full py-16">
         <span class="font-semibold text-3xl">
             <h1 class="font-bold text-6xl mb-2">
@@ -25,23 +26,27 @@
     </div>
     
     <div class="grid grid-cols-2 grid-rows-2 gap-8 h-96 max-w-[48rem]">
-        <img class="w-full h-full" src="/svg-library/svg/space-animated.svg" title="Space Animated" alt="Space Animated"/>
+        <img class="w-full h-full" src="/svg-library/svg/space-animated.svg" title="Space Animated" alt="Space Animated" />
         <div class="px-4 py-2 flex items-center justify-center font-semibold text-4xl">
             « Space Animated
         </div>
         <div class="px-4 py-2 flex items-center justify-center font-semibold text-4xl">
             Space Static »
         </div>
-        <img class="w-full h-full" src="/svg-library/svg/space-static.svg" title="Space Static" alt="Space Static"/>
+        <img class="w-full h-full" src="/svg-library/svg/space-static.svg" title="Space Static" alt="Space Static" />
     </div>
 
     <div class="h-96 max-w-[48rem]">
         <ScriptGate type="js-enabled">
-            <SVG_Clock class="w-full h-full"/>
+            <SVG_Clock class="w-full h-full" />
         </ScriptGate>
         <ScriptGate type="js-disabled">
             <img class="w-full h-full" src="/svg-library/svg/clock.svg" title="Clock" alt="Clock">
         </ScriptGate>
+    </div>
+
+    <div class="max-w-[32rem]">
+        <img class="w-full aspect-video border-2 border-white" src="/svg-library/svg/bounce.svg" title="Bounce" alt="Bounce" />
     </div>
 
 </div>
