@@ -2,6 +2,8 @@
     import ScriptGate from "$components/ScriptGate.svelte";
     import SVG_Clock from "$components/svg/clock.svelte";
 
+    let rain: boolean = false;
+
 </script>
 
 <style lang="scss">
@@ -11,6 +13,10 @@
     }
 
 </style>
+
+{#if rain}
+    <img class="fixed top-0 left-0 w-screen h-screen z-10 pointer-events-none" src="/svg-library/svg/stylized-rain.svg" alt="Rain Overlay">
+{/if}
 
 <div class="w-full px-32 flex flex-col items-center gap-16 pb-32">
 
@@ -48,5 +54,14 @@
     <div class="max-w-[32rem]">
         <img class="w-full aspect-video border-2 border-white" src="/svg-library/svg/bounce.svg" title="Bounce" alt="Bounce" />
     </div>
+
+    <ScriptGate type="js-enabled">
+        <button
+            class="bg-white !text-black text-2xl font-bold px-4 py-2 rounded-lg"
+            on:click={() => rain = !rain}
+        >
+            Toggle Rain
+        </button>
+    </ScriptGate>
 
 </div>
